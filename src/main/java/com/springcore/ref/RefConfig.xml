@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="address01" class="com.springcore.ref.Address">
+		<property name="city" value="Bangalore"/>
+		<property name="pinCode" value="560023"/>
+	</bean>
+	<bean name="teacher01" class="com.springcore.ref.Teacher" p:tid="455" p:tname="PK" p:address-ref="address01"/>
+	<!--  	
+		<property name="tid" value="101"/>
+		<property name="tname" value="PK Dash"/>
+		<property name="address">
+			<ref bean="address01"/>
+		</property>
+		<property name="address" ref="address01"/>
+	</bean>
+	-->
+</beans>
