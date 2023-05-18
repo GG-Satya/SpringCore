@@ -2,17 +2,20 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
  https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean name="certificate1" class="com.springcore.ci.Certificate">
-		<constructor-arg value="123456" type="int"/>
-		<constructor-arg value="FullStack Web Development" type="String"/>
-	</bean>
-	<bean name="person1" class="com.springcore.ci.Person">
-		<constructor-arg value="101" type="int"/>
-		<constructor-arg value="Satya" type="String"/>
-		<constructor-arg ref="certificate1" type="Certificate"/>
-	</bean>
+	<bean name="certificate1" class="com.springcore.ci.Certificate" c:serialNo="0120" c:name="Python"/>
+		<!-- <constructor-arg value="123456" type="int"/> 
+			 <constructor-arg value="FullStack Web Development" type="String"/> 
+	</bean> -->
+			
+		<bean name="person1" class="com.springcore.ci.Person">
+			<constructor-arg value="101" type="int" />
+			<constructor-arg value="Satya" type="String" />
+			<constructor-arg ref="certificate1"
+				type="Certificate" />
+		</bean>
 
 </beans>
