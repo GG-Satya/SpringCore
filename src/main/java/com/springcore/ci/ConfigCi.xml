@@ -17,5 +17,10 @@
 			<constructor-arg ref="certificate1"
 				type="Certificate" />
 		</bean>
+		
+		<bean name="addition01" class="com.springcore.ci.Addition">
+			<constructor-arg value="16" type="int" index="1"/>
+			<constructor-arg value="21" type="int" index="0"/>
+		</bean>
 
 </beans>
