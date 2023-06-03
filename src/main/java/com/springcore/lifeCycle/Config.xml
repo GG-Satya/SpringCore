@@ -8,4 +8,8 @@
 	<bean name="food01" class="com.springcore.lifeCycle.Food" init-method="hey" destroy-method="bye">
 		<property name="price" value="10"/>
 	</bean>
+	
+	<bean name="drink01" class="com.springcore.lifeCycle.Drinks">
+		<property name="price" value="11.11"/>
+	</bean>
 </beans>
