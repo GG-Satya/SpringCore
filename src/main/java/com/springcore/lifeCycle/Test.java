@@ -17,5 +17,7 @@ public class Test {
 		Drinks drink01 = (Drinks) context.getBean("drink01");
 		System.out.println(drink01);
 		
+		Example ex01 = (Example) context.getBean("ex01");
+		System.out.println(ex01);
 	}
 }
