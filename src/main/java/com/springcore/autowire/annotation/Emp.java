@@ -1,17 +1,19 @@
 package com.springcore.autowire.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Emp {
 	
-	
+	@Autowired
+	@Qualifier("city000")
 	private City city;
 
 	public Emp() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	@Autowired
+	
 	public Emp(City city) {
 		super();
 		System.out.println("through constructor");

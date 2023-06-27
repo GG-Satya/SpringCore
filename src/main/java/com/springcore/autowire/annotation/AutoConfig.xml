@@ -10,12 +10,12 @@
 	
 	<context:annotation-config/>
 
-	<bean class="com.springcore.autowire.annotation.City" name="city01">
-		<property name="name" value="Bhubaneswar"/>
-		<property name="pin" value="123"/>
-	</bean>
+<!-- 	<bean class="com.springcore.autowire.annotation.City" name="city01"> -->
+<!-- 		<property name="name" value="Bhubaneswar"/> -->
+<!-- 		<property name="pin" value="123"/> -->
+<!-- 	</bean> -->
 	
-	<bean class="com.springcore.autowire.annotation.City" name="city">
+	<bean class="com.springcore.autowire.annotation.City" name="city000">
 		<property name="name" value="Bangalore"/>
 		<property name="pin" value="999"/>
 	</bean>
