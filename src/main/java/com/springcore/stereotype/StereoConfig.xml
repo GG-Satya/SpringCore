@@ -18,4 +18,6 @@
 		<value>Cuttack</value>
 		<value>Bhadrak</value>
 	</util:list>
+	
+	<bean class="com.springcore.stereotype.Teacher" name="teacher01" scope="prototype"/>
 </beans>
