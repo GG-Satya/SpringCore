@@ -9,6 +9,7 @@ public class Test {
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/stereotype/StereoConfig.xml");
 		Student student = context.getBean("stud",Student.class);
 		System.out.println(student);
+		System.out.println(student.getAddresses().getClass().getName());
 	}
 
 }
