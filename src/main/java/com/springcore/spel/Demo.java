@@ -19,6 +19,9 @@ public class Demo {
 	
 	@Value("#{new java.lang.String('satya')}")
 	private String name;
+	
+	@Value("#{5 < 8}")
+	private boolean isActive;
 	public double getPi() {
 		return pi;
 	}
@@ -47,14 +50,21 @@ public class Demo {
 	public String getName() {
 		return name;
 	}
+	
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public boolean isActive() {
+		return isActive;
+	}
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
+	}
 	@Override
 	public String toString() {
-		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", pi=" + pi + ", name=" + name + "]";
+		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", pi=" + pi + ", name=" + name + ", isActive=" + isActive
+				+ "]";
 	}
-	
-	
 	
 }
